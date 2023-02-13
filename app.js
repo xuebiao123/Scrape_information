@@ -1,7 +1,7 @@
 const https = require('https');
 const JSSoup = require('jssoup').default;
 const fs = require('fs');
-const url = "https://en.wikipedia.org/wiki/Goldsmiths,_University_of_London"; // FIRST: find a url of a page you are interested in from wikipedia 
+const url = "https://en.wikipedia.org/wiki/Nature"; // FIRST: find a url of a page you are interested in from wikipedia 
 const jsonPath = "./json/"; 
 const name = "";
 
@@ -20,7 +20,7 @@ function getParagraphText(soupTag){
     for(let i = 0; i < paragraphs.length; i++){
         let p = paragraphs[i].getText().toLowerCase();
 
-        if(p.indexOf("goldsmiths") != -1){
+        if(p.indexOf("life") != -1){
             console.log(p);
             //text += p;
             zzz.push(p);

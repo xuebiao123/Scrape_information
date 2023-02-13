@@ -1,0 +1,24 @@
+
+/*This is a comment in CSS*/
+
+body{
+    font-family: fantasy;
+}
+
+h1{
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* When giving a child element position absolute you should give the parent position value as well */
+/* The child will then be positioned absolute in realtion to the box container of the parent */
+/* positioning elements on the page is fundamental to understanding CSS: https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+.title{
+    position: relative;
+    width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+}
